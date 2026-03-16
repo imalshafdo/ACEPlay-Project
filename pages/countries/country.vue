@@ -10,10 +10,10 @@
 
         <nav class="nav-links">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
-          <a class="nav-link" href="#">Games</a>
-          <a class="nav-link" href="#">Casinos</a>
+          <a class="nav-link" href="/games">Games</a>
+          <a class="nav-link" href="#about">About us</a>
           <a class="nav-link" href="#">Promotions</a>
-          <a class="nav-link" href="/review">Reviews</a>
+          
           
         </nav>
 
@@ -512,18 +512,18 @@ const visibleCountries = computed(() => {
 /* Footer */
 .footer {
   margin-top: 40px;
-  background: linear-gradient(180deg, rgba(10, 12, 18, 0.7), #050509);
+  background:rgb(42, 48, 74);
   border-top: 1px solid rgba(15, 23, 42, 0.9);
   padding: 36px 20px 18px;
   color: rgba(229, 231, 235, 0.64);
 }
 
 .footer-inner {
-  max-width: 1120px;
+  max-width: 1000px;
   margin: 0 auto 18px;
   display: flex;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 300px;
 }
 
 .footer-brand {
@@ -577,7 +577,7 @@ const visibleCountries = computed(() => {
   max-width: 1120px;
   margin: 0 auto;
   padding-top: 12px;
-  border-top: 1px solid rgba(31, 41, 55, 0.9);
+  border-top: 1px solid rgba(54, 69, 90, 0.9);
   font-size: 0.78rem;
   color: rgba(229, 231, 235, 0.5);
   text-align: center;

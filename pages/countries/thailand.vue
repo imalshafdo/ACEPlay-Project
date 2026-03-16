@@ -9,11 +9,11 @@
 
         <nav class="nav-links">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
-          <NuxtLink class="nav-link" to="/countries">Countries</NuxtLink>
+          <NuxtLink class="nav-link" to="/countries/country">Countries</NuxtLink>
           <NuxtLink class="nav-link" to="/casinos">Casinos</NuxtLink>
-          <NuxtLink class="nav-link" to="/promotions">Promotions</NuxtLink>
-          <NuxtLink class="nav-link" to="/reviews">Reviews</NuxtLink>
-          <NuxtLink class="nav-link" to="/providers">Game Providers</NuxtLink>
+          <NuxtLink class="nav-link" to="/games">Games</NuxtLink>
+        
+          <NuxtLink class="nav-link" to="/gamedetails">Game Details</NuxtLink>
         </nav>
 
         <div class="nav-actions">
@@ -334,7 +334,7 @@ const casinos = [
   background: rgb(47, 65, 100);
   color: var(--text-main);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  padding-bottom: 80px;
+
 }
 
 /* Navbar */
@@ -815,18 +815,18 @@ const casinos = [
 /* Footer */
 .footer {
   margin-top: 40px;
-  background: linear-gradient(180deg, rgba(10, 12, 18, 0.7), #050509);
+  background:rgb(42, 48, 74);
   border-top: 1px solid rgba(15, 23, 42, 0.9);
   padding: 36px 20px 18px;
   color: rgba(229, 231, 235, 0.64);
 }
 
 .footer-inner {
-  max-width: 1120px;
+  max-width: 1000px;
   margin: 0 auto 18px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 300px;
 }
 
 .footer-brand {
@@ -837,7 +837,7 @@ const casinos = [
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -879,10 +879,38 @@ const casinos = [
 .footer-bottom {
   max-width: 1120px;
   margin: 0 auto;
-  padding-top: 1px;
-  border-top: 1px solid rgba(31, 41, 55, 0.9);
+  padding-top: 12px;
+  border-top: 1px solid rgba(54, 69, 90, 0.9);
   font-size: 0.78rem;
   color: rgba(229, 231, 235, 0.5);
   text-align: center;
 }
+
+@media (max-width: 980px) {
+  .country-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 880px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls {
+    justify-content: flex-start;
+  }
+
+  .country-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
+

@@ -8,7 +8,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@nuxtjs/sitemap": "^7.6.0",
     "nuxt": "^3.19.0"
   }
 }
-

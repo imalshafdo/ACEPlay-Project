@@ -12,7 +12,7 @@
           <a href="#casinos">Casinos</a>
           <a href="#games">Games</a>
           <a href="#promotions">Promotions</a>
-          <a href="/casinopage">Reviews</a>
+          <a href="#guide">Guide</a>
           <a href="#about">About</a>
         </nav>
 
@@ -260,7 +260,7 @@
           <div class="footer-column">
             <h4>Company</h4>
             <a href="#">About us</a>
-            <a href="#">Contact</a>
+            <a href="#">Contact us</a>
             <a href="#">Careers</a>
           </div>
           <div class="footer-column">
@@ -287,7 +287,7 @@
         <img src="https://aceplay.bet/_vercel/image?url=%2Fimg%2Fcertify%2Fgpwa.webp&w=1536&q=100" alt="GPWA" style="height: 15px; object-fit: contain;">
         <img src="https://aceplay.bet/_vercel/image?url=%2Fimg%2Fcertify%2Fdmca.webp&w=1536&q=100" alt="DMCA" style="height: 15px; object-fit: contain;">
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom" >
         <span>© Copyright 2018 - {{ new Date().getFullYear() }}, ACEPlay All Rights Reserved.</span>
       </div>
     </footer>
@@ -1316,8 +1316,7 @@ const filteredGames = computed(() => {
 }
 
 .game-meta-value {
-  font-weight: 500;
-  
+  font-weight: 500; 
 }
 
 /* Promotions */
@@ -1426,11 +1425,11 @@ const filteredGames = computed(() => {
 }
 
 .footer-inner {
-  max-width: 1120px;
+  max-width: 1000px;
   margin: 0 auto 18px;
   display: flex;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 300px;
 }
 
 .footer-brand {
@@ -1446,7 +1445,7 @@ const filteredGames = computed(() => {
 .footer-columns {
   display: flex;
   flex: 2 1 360px;
-  gap: 40px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 

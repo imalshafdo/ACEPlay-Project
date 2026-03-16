@@ -292,7 +292,6 @@ const promotions = ref([
   background: rgb(47, 65, 100);
   color: var(--text-main);
   font-family: system-ui, -apple-system, sans-serif;
-  padding-bottom: 80px;
 }
 
 /* Navbar */
@@ -624,17 +623,17 @@ const promotions = ref([
 .right-align { text-align: right; }
 
 /* Footer */
-.footer { background: #111; color: #fff; padding-top: 60px; }
+.footer { background:rgb(42, 48, 74);; color: #fff; padding-top: 0px; }
 .footer-inner {
-  max-width: 1300px; margin: 0 auto; padding: 0 24px;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;
+  max-width: 1300px; margin: 0 auto; padding: 0 50px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 30px;
 }
 .footer-brand { max-width: 400px; }
 .footer-logo {
   display: inline-flex; align-items: center; gap: 10px;
-  font-size: 1.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 16px;
+  font-size: 1.3rem; font-weight: 800; text-transform: uppercase; margin-bottom: 16px;
 }
-.footer-text { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+.footer-text { color: #94a3b8; line-height: 1.6; font-size: 0.90rem; }
 .footer-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
 .footer-column h4 { font-size: 1.1rem; margin-bottom: 20px; }
 .footer-column a {

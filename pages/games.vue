@@ -1036,85 +1036,76 @@ const toggleFaq = (index) => {
 
 /* Footer */
 .footer {
-  margin-top: 32px;
-  border-top: 1px solid rgba(31, 41, 55, 0.9);
-  background: rgb(42, 48, 74);
-  padding: 32px 20px 18px;
-  color: var(--text-muted);
+  margin-top: 40px;
+  background:rgb(42, 48, 74);
+  border-top: 1px solid rgba(15, 23, 42, 0.9);
+  padding: 36px 20px 18px;
+  color: rgba(229, 231, 235, 0.64);
 }
 
 .footer-inner {
-  max-width: 1120px;
+  max-width: 1000px;
   margin: 0 auto 18px;
   display: flex;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 300px;
 }
 
 .footer-brand {
-  flex: 1 1 220px;
-  max-width: 320px;
+  flex: 1 1 260px;
+  max-width: 360px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .footer-text {
-  font-size: 0.82rem;
-  margin-top: 10px;
+  font-size: 0.84rem;
+  margin: 10px 0 14px;
+  color: rgba(229, 231, 235, 0.58);
 }
 
 .footer-columns {
   display: flex;
   flex: 2 1 360px;
-  gap: 40px;
+  gap: 44px;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .footer-column h4 {
-  font-size: 0.85rem;
-  margin-bottom: 8px;
-  color: #e5e7eb;
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.92rem;
 }
 
 .footer-column a {
   display: block;
-  font-size: 0.8rem;
-  color: var(--text-muted);
+  color: rgba(229, 231, 235, 0.62);
   text-decoration: none;
-  margin-bottom: 4px;
+  font-size: 0.84rem;
+  margin-bottom: 6px;
 }
 
 .footer-column a:hover {
-  color: rgb(131, 148, 184);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .footer-bottom {
   max-width: 1120px;
   margin: 0 auto;
-  padding-top: 10px;
-  border-top: 1px solid rgba(47, 61, 80, 0.9);
+  padding-top: 12px;
+  border-top: 1px solid rgba(54, 69, 90, 0.9);
   font-size: 0.78rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-/* Responsive */
-@media (max-width: 880px) {
-  .navbar-inner {
-    gap: 14px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .providers-grid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
-
-  .games-grid {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }
+  color: rgba(229, 231, 235, 0.5);
+  text-align: center;
 }
 
 @media (max-width: 640px) {

@@ -9,11 +9,9 @@
 
         <nav class="nav-links">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
-          <NuxtLink class="nav-link" to="/countries">Countries</NuxtLink>
-          <NuxtLink class="nav-link" to="/casinos">Casinos</NuxtLink>
-          <NuxtLink class="nav-link" to="/promotions">Promotions</NuxtLink>
-          <NuxtLink class="nav-link" to="review">Reviews</NuxtLink>
-          <NuxtLink class="nav-link" to="/providers">Game Providers</NuxtLink>
+          <NuxtLink class="nav-link" to="/countries/country">Countries</NuxtLink>
+          <NuxtLink class="nav-link" to="/games">Games</NuxtLink>
+          <NuxtLink class="nav-link" to="#about">About us</NuxtLink>
         </nav>
 
         <div class="nav-actions">
@@ -301,7 +299,7 @@ const casinos = [
   background: rgb(47, 65, 100);
   color: var(--text-main);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  padding-bottom: 80px;
+
 }
 
 /* Navbar */
@@ -781,18 +779,18 @@ const casinos = [
 /* Footer */
 .footer {
   margin-top: 40px;
-  background: linear-gradient(180deg, rgba(10, 12, 18, 0.7), #050509);
+  background:rgb(42, 48, 74);
   border-top: 1px solid rgba(15, 23, 42, 0.9);
   padding: 36px 20px 18px;
   color: rgba(229, 231, 235, 0.64);
 }
 
 .footer-inner {
-  max-width: 1120px;
+  max-width: 1000px;
   margin: 0 auto 18px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 350px;
 }
 
 .footer-brand {
@@ -819,7 +817,7 @@ const casinos = [
 .footer-columns {
   display: flex;
   flex: 2 1 360px;
-  gap: 44px;
+  gap: 100px;
   flex-wrap: wrap;
   margin-left: auto;
 }

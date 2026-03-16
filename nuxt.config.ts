@@ -7,6 +7,11 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'ACEPlay casino hub' },
       ],
+      modules: ['@nuxtjs/sitemap'],
+
+sitemap: {
+  hostname: 'https://aceplay.bet'
+}
     },
   },
 })
