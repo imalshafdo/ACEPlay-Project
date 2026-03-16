@@ -10,8 +10,8 @@
         <nav class="nav-links" style="color:aliceblue">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
           <NuxtLink class="nav-link" to="/countries">Countries</NuxtLink>
-          <NuxtLink class="nav-link" to="/casinos">Casinos</NuxtLink>
-          <NuxtLink class="nav-link" to="/promotions">Promotions</NuxtLink>
+          <NuxtLink class="nav-link" to="/country/thailand">Thailand Casinos</NuxtLink>
+          
           <NuxtLink class="nav-link" to="/games">Games</NuxtLink>
         </nav>
 
@@ -622,29 +622,67 @@ const promotions = ref([
 .right-align { text-align: right; }
 
 /* Footer */
-.footer { background:rgb(42, 48, 74);; color: #fff; padding-top: 0px; }
+.footer {
+  margin-top: 32px;
+  border-top: 1px solid rgba(31, 41, 55, 0.9);
+  background:rgb(42, 48, 74);
+  padding: 32px 20px 18px;
+  color: var(--text-muted);
+}
+
 .footer-inner {
-  max-width: 1300px; margin: 0 auto; padding: 0 50px;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 30px;
+  max-width: 1000px;
+  margin: 0 auto 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 300px;
 }
-.footer-brand { max-width: 400px; }
-.footer-logo {
-  display: inline-flex; align-items: center; gap: 10px;
-  font-size: 1.3rem; font-weight: 800; text-transform: uppercase; margin-bottom: 16px;
+
+.footer-brand {
+  flex: 1 1 220px;
+  max-width: 320px;
 }
-.footer-text { color: #94a3b8; line-height: 1.6; font-size: 0.90rem; }
-.footer-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-.footer-column h4 { font-size: 1.1rem; margin-bottom: 20px; }
+
+.footer-text {
+  font-size: 0.82rem;
+  margin-top: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 2 1 360px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: #e5e7eb;
+}
+
 .footer-column a {
-  display: block; color: #94a3b8; text-decoration: none;
-  margin-bottom: 12px; transition: color 0.2s;
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: 4px;
 }
-.footer-column a:hover { color: #fff; }
-.certify-row { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 20px; color: #94a3b8; }
-.certify-row img { height: 15px; object-fit: contain; }
+
+.footer-column a:hover {
+  color:rgb(131, 148, 184);
+}
+
 .footer-bottom {
-  text-align: center; padding: 24px; border-top: 1px solid rgba(255,255,255,0.1);
-  color: #64748b; font-size: 0.9rem;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(47, 61, 80, 0.9);
+  font-size: 0.78rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1024px) {
