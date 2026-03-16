@@ -10,8 +10,8 @@
 
         <nav class="nav-links" style="color:aliceblue">
           <NuxtLink to="/">Home</NuxtLink>
-          <NuxtLink to="Games">Games</NuxtLink>
-          <a href="/countries">Countries</a>
+          <NuxtLink to="/games">Games</NuxtLink>
+          <NuxtLink to="/countries/country">Country</NuxtLink>
           <a href="#">How to play</a>
           <a href="#">Pros & Cons</a>
           <a href="#">FAQ</a>

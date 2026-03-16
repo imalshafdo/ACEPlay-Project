@@ -12,7 +12,7 @@
           <NuxtLink to="/">Home</NuxtLink>
           <a href="#trending games" class="active"> Trending Games</a>
           <a href="#pros&cons">Pros & Cons</a>
-          <a href="#faq">FAQ</a>
+          <a href="/games#faq">FAQ</a>
           <a href="#player-reviews">Player Reviews</a>
         </nav>
 
