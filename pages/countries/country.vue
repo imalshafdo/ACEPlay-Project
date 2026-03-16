@@ -11,10 +11,7 @@
         <nav class="nav-links">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
           <a class="nav-link" href="/games">Games</a>
-          <a class="nav-link" href="#about">About us</a>
-          <a class="nav-link" href="#">Promotions</a>
-          
-          
+          <a class="nav-link" href="#footer">About us</a>    
         </nav>
 
         <div class="nav-actions">

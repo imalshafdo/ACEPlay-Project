@@ -13,7 +13,7 @@
           <a href="#games">Games</a>
           <a href="#promotions">Promotions</a>
           <a href="#guide">Guide</a>
-          <a href="#about">About</a>
+          <a href="#about">About us</a>
         </nav>
 
         <div class="nav-actions" style="color:aliceblue">

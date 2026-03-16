@@ -12,8 +12,7 @@
           <NuxtLink class="nav-link" to="/countries">Countries</NuxtLink>
           <NuxtLink class="nav-link" to="/casinos">Casinos</NuxtLink>
           <NuxtLink class="nav-link" to="/promotions">Promotions</NuxtLink>
-          <NuxtLink class="nav-link" to="/reviews">Reviews</NuxtLink>
-          <NuxtLink class="nav-link" to="/games">Game Providers</NuxtLink>
+          <NuxtLink class="nav-link" to="/games">Games</NuxtLink>
         </nav>
 
         <div class="nav-actions">

@@ -10,7 +10,7 @@
         <nav class="nav-links">
           <NuxtLink class="nav-link" to="/">Home</NuxtLink>
           <NuxtLink class="nav-link" to="/countries/country">Countries</NuxtLink>
-          <NuxtLink class="nav-link" to="/casinos">Casinos</NuxtLink>
+          <NuxtLink class="nav-link" to="/countries/philippinespg"> Philippine Casinos</NuxtLink>
           <NuxtLink class="nav-link" to="/games">Games</NuxtLink>
         
           <NuxtLink class="nav-link" to="/gamedetails">Game Details</NuxtLink>
