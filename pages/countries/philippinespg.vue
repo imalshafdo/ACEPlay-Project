@@ -4,7 +4,7 @@
       <div class="navbar-inner">
         <NuxtLink to="/" class="brand">
           <span class="brand-mark" aria-hidden="true">◈</span>
-          <span class="brand-text">ACE<span class="brand-accent">Play</span></span>
+          <span class="brand-text">ACE<span class="brand-accent" style="color:rgb(213, 27, 27)">Play</span></span>
         </NuxtLink>
 
         <nav class="nav-links">

@@ -5,7 +5,7 @@
       <div class="navbar-inner">
         <NuxtLink to="/" class="logo" style="color:aliceblue">
           <span class="logo-badge" style="color:aliceblue">ACE</span>
-          <span class="logo-text">Play</span>
+          <span class="logo-text" style="color:rgb(213, 27, 27)">Play</span>
         </NuxtLink>
 
         <nav class="nav-links" style="color:aliceblue">
@@ -37,8 +37,8 @@
 
         <div class="hero-actions">
           <div class="country-selector">
-            <button class="btn primary large" @click="toggleDropdown">
-              {{ selectedCountry === 'default' ? 'See Top Casinos' : `Top Casinos - ${selectedCountry}` }}
+            <button class="btn primary large" style="color: #fefefe;" @click="toggleDropdown">
+              {{ selectedCountry === 'default' ? 'See Top Casinos' : `See Top Casinos` }}
               <span class="dropdown-arrow">▼</span>
             </button>
             <div v-if="showDropdown" class="dropdown-menu" @click.stop>
@@ -54,7 +54,7 @@
               </div>
             </div>
           </div>
-          <NuxtLink class="btn secondary large" to="/countries/country" style="color:aliceblue">All Countries</NuxtLink>
+          <NuxtLink class="btn secondary large" to="/countries/country" style="color:rgb(199, 200, 201)">All Countries</NuxtLink>
         </div>
 
         <div class="hero-meta">
@@ -79,7 +79,7 @@
     <!-- Top casinos -->
     <section id="casinos" class="section">
       <div class="section-header">
-        <h2 class="section-title" style="color:white">Top Casinos in {{ currentCountryData.name }}</h2>
+        <h2 class="section-title" style="color:rgb(255, 248, 248)">Top Casinos in {{ currentCountryData.name }}</h2>
         <p class="section-subtitle" style="color:white">
           {{ currentCountryData.subtitle }}
         </p>
@@ -710,8 +710,8 @@ const filteredGames = computed(() => {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 200px;
- background: linear-gradient(135deg,rgb(175, 34, 34),rgb(175, 68, 68));
+  min-width: 170px;
+ background: rgb(149, 43, 43);
   border: 1px solid var(--border-subtle);
   border-radius: 3px;
   box-shadow: var(--shadow-card);
@@ -723,21 +723,22 @@ const filteredGames = computed(() => {
 .dropdown-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
+  gap: 10px;
+  padding: 8px 12px;
   cursor: pointer;
   transition: background var(--transition-fast);
-  color: black;
-  text-decoration: none;
+  color: white;
+  font-weight: 400px;
 }
 
 .dropdown-item:hover {
   background: rgba(59, 130, 246, 0.1);
+  color: rgb(21, 20, 20);
 }
 
 .dropdown-item.active {
   background: rgba(236, 37, 19, 0.1);
-  color: var(--accent);
+  color: white;
 }
 
 .flag {
@@ -745,7 +746,7 @@ const filteredGames = computed(() => {
 }
 
 .dropdown-arrow {
-  margin-left: 8px;
+  margin-left: 2px;
   font-size: 0.8rem;
   transition: transform var(--transition-fast);
 }
@@ -875,7 +876,7 @@ const filteredGames = computed(() => {
 .btn {
   border-radius: var(--radius-pill);
   border: 1px solid transparent;
-  padding: 8px 16px;
+  padding: 8px 12px;
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
@@ -886,31 +887,31 @@ const filteredGames = computed(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap:7px;
 }
 
 .btn.primary {
-  background: linear-gradient(135deg,rgb(175, 34, 34),rgb(175, 68, 68));
+  background: linear-gradient(135deg,rgb(175, 34, 34),rgb(208, 64, 64));
   color: #0b1220;
   box-shadow: 0 16px 40px rgba(255, 45, 45, 0.32);
-  border-color: rgba(157, 169, 188, 0.45);
-  border-radius: 5px;
+  border-color: rgba(191, 197, 207, 0.45);
+  border-radius: 8px;
  
 }
 
 .btn.primary:hover {
   transform: translateY(2px);
-  box-shadow: 0 20px 48px rgba(178, 40, 40, 0.42);
+  box-shadow: 0 20px 48px rgba(204, 42, 42, 0.42);
 }
 
 .btn.secondary {
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(1, 5, 14, 0.7);
   border-color: rgb(70, 102, 153);
-  border-radius: 10px; 
+  border-radius: 6px; 
 }
 
 .btn.secondary:hover {
-  background: rgba(39, 52, 83, 0.92);
+  background: rgba(46, 70, 123, 0.92);
   transform: translateY(2px);
   box-shadow: 0 20px 48px rgba(84, 66, 157, 0.42);
 }
@@ -927,12 +928,12 @@ const filteredGames = computed(() => {
 }
 
 .btn.large {
-  padding: 12px 20px;
+  padding: 16px 20px;
   font-size: 0.9rem;
 }
 
 .btn.small {
-  padding: 6px 13px;
+  padding: 10px 11px;
   font-size: 0.8rem;
 }
 

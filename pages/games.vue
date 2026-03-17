@@ -5,7 +5,7 @@
       <div class="navbar-inner">
         <NuxtLink to="/" class="logo" style="color:aliceblue">
           <span class="logo-badge" style="color:aliceblue">ACE</span>
-          <span class="logo-text">Play</span>
+          <span class="logo-text" style="color:rgb(213, 27, 27)">Play</span>
         </NuxtLink>
 
         <nav class="nav-links" style="color:aliceblue">
@@ -586,7 +586,7 @@ const toggleFaq = (index) => {
   border-radius: var(--radius-pill);
   border: 1px solid transparent;
   padding: 8px 16px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   letter-spacing: 0.06em;
@@ -600,7 +600,7 @@ const toggleFaq = (index) => {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, rgb(175, 34, 34), rgb(197, 85, 85));
+  background: linear-gradient(135deg, rgb(175, 34, 34), rgb(214, 41, 41));
   color: #0b1220;
   box-shadow: 0 16px 40px rgba(255, 45, 45, 0.32);
   border-color: rgba(157, 169, 188, 0.45);

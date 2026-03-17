@@ -5,7 +5,7 @@
       <div class="navbar-inner">
         <NuxtLink to="/" class="logo" style="color:aliceblue">
           <span class="logo-badge" style="color:aliceblue">ACE</span>
-          <span class="logo-text">Play</span>
+          <span class="logo-text" style="color:rgb(213, 27, 27)">Play</span>
         </NuxtLink>
 
         <nav class="nav-links" style="color:aliceblue">
