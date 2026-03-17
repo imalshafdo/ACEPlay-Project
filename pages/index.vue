@@ -54,7 +54,7 @@
               </div>
             </div>
           </div>
-          <NuxtLink class="btn secondary large" to="/countries/country" style="color:rgb(199, 200, 201)">All Countries</NuxtLink>
+          <NuxtLink class="btn secondary large" to="/countries/country" style="color:rgb(204, 206, 209)">All Countries</NuxtLink>
         </div>
 
         <div class="hero-meta">
@@ -97,7 +97,7 @@
               </template>
             </div>
 
-            <div class="casino-content" style="color:darkgray">
+            <div class="casino-content" style="color:rgb(226, 220, 220)">
               <div class="casino-header">
                 <h3 class="casino-name">{{ casino.name }}</h3>
                 <div class="casino-rating">
@@ -316,7 +316,7 @@ const countryData = {
     promoSubtitle: 'Sign up through ACEPlay and unlock special deposit offers you will not find anywhere else.',
     casinos: [
       {
-        name: 'BETLUCKMAK',
+        name: 'Betluckmk',
         short: 'RT',
         logoUrl: 'https://j99jfc6l8uchv7rv.public.blob.vercel-storage.com/logo/thailand/betluckmak.jpg',
         rating: '4.9',
